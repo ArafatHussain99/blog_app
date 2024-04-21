@@ -7,12 +7,14 @@ class AppTheme {
         borderRadius: BorderRadius.circular(10.0),
       );
   static final dartThemeMode = ThemeData.dark().copyWith(
-      scaffoldBackgroundColor: AppPallete.backgroundColor,
-      appBarTheme:
-          const AppBarTheme(backgroundColor: AppPallete.backgroundColor),
-      inputDecorationTheme: InputDecorationTheme(
-        contentPadding: const EdgeInsets.all(27),
-        enabledBorder: _border(),
-        focusedBorder: _border(AppPallete.gradient2),
-      ));
+    scaffoldBackgroundColor: AppPallete.backgroundColor,
+    appBarTheme: const AppBarTheme(backgroundColor: AppPallete.backgroundColor),
+    inputDecorationTheme: InputDecorationTheme(
+      contentPadding: const EdgeInsets.all(27),
+      enabledBorder: _border(),
+      focusedBorder: _border(AppPallete.gradient2),
+      errorBorder: _border(AppPallete.gradient3),
+      focusedErrorBorder: _border(AppPallete.gradient3),
+    ),
+  );
 }
